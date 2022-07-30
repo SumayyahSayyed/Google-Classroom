@@ -23,7 +23,7 @@ The project is a self-made replica of Google Classroom.
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://sumayyahsayyed.github.io/Google-Classroom/]
 
 ## Process
 
