@@ -124,7 +124,6 @@ body {
     padding: .5em 0;
     display: flex;
     background-color: white !important;
-    transition: left 0.3s ease;
     flex-direction: column;
     min-width: 300px;
     box-shadow: 0 4px 4px 0 rgba(60, 64, 67, .3), 0 8px 12px 6px rgba(60, 64, 67, .15);
