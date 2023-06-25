@@ -52,6 +52,7 @@ h1 {
 .heading h1 {
     display: flex;
     justify-content: center;
+    margin-left: 35px;
     gap: 3px;
 }
 
@@ -70,11 +71,12 @@ h1 {
     color: black;
 }
 
+
 #account {
     font-size: 35px;
 }
 
-nav a {
+.navbar {
     padding: 10px 5px 10px 0px;
 }
 
@@ -105,6 +107,83 @@ footer {
     margin: 0.6rem;
 }
 
+body {
+    position: relative;
+}
+
+#hamburger {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: .5em 0;
+    display: flex;
+    background-color: white !important;
+    transition: left 0.3s ease;
+    flex-direction: column;
+    min-width: 300px;
+    box-shadow: 0 4px 4px 0 rgba(60, 64, 67, .3), 0 8px 12px 6px rgba(60, 64, 67, .15);
+}
+
+.sidebar label {
+    padding: .4em 2em .6em .7em;
+    color: #454546;
+}
+
+.sidebar .classes {
+    padding: .5em 1.5em;
+}
+
+.classes span {
+    background-color: rgb(25, 103, 210);
+    padding: 10px 13.2px;
+    border-radius: 50%;
+    color: white;
+}
+
+.sidebar div {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    cursor: pointer;
+    padding: .4em 2em .6em .7em;
+    border: 1px solid #ffffff;
+    margin-right: .7em;
+    color: #454546;
+
+}
+
+.sidebar div p {
+    font-size: 15px;
+}
+
+.sidebar div .material-symbols-outlined {
+    color: #5f6368;
+}
+
+
+.sidebar div:hover {
+    background-color: #f3f3f3;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+.main:hover {
+    background-color: #94b0fc40 !important;
+    border: 1px solid #2962ff;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+.divide {
+    margin: 1em 0;
+}
+
 .panel {
     padding-left: 20px;
     margin: 0;
@@ -123,7 +202,6 @@ footer {
 }
 
 .panel .material-symbols-outlined {
-    font-size: 18px;
     padding-top: 2px;
 }
 
@@ -211,7 +289,42 @@ h2 {
     font-size: 22px;
 }
 
+.hide {
+    display: none;
+}
+
+.help-dropdown {
+    max-width: 250px;
+    margin: 0 .5em;
+    background-color: white;
+    padding: .3em 0;
+    border-radius: .3em;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.141), 0 1px 3px 0 rgba(0, 0, 0, 0.122);
+}
+
+.help-dropdown li {
+    padding: .5em 1em;
+    font-size: 14px;
+}
+
+#add-icon-menu {
+    margin: 0 2em;
+    position: absolute;
+    top: 48px;
+    right: 100px;
+    padding: .5em 0;
+    border-radius: .3em;
+    background-color: white;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.473), 0 1px 1px 0 rgba(0, 0, 0, 0.518), 0 1px 3px 0 rgba(0, 0, 0, 0.457);
+}
+
+#add-icon-menu li {
+    padding: 1em;
+}
+
 footer {
+
+    margin-top: 3em;
     position: fixed;
     left: 15px;
     bottom: 11px;
@@ -225,7 +338,8 @@ footer .material-symbols-outlined {
 /* --- Hover --- */
 
 .end .material-symbols-outlined:hover,
-.navbar .material-symbols-outlined:hover {
+.navbar .material-symbols-outlined:hover,
+#hamburger:hover {
     background-color: #f3f3f3;
     width: 45px;
     height: 45px;
@@ -247,6 +361,11 @@ footer .material-symbols-outlined {
 .todo .panel-text:hover,
 .calendar .panel-text:hover {
     color: rgb(2, 2, 163);
+}
+
+.help-dropdown li:hover,
+#add-icon-menu li:hover {
+    background-color: #96969642;
 }
 
 footer .material-symbols-outlined:hover {
