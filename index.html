@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar">
         <ul class="left-nav">
-            <a href="#"><span class="material-symbols-outlined">menu</span></a>
+            <!-- <div class="main-side"> -->
             <a href="#" class="heading">
                 <h1>
                     <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg"
@@ -29,12 +29,62 @@
             </a>
         </ul>
         <ul class="right-nav">
-            <a href="#"><span class="material-symbols-outlined" id="plus">add</span></a>
+            <div class="plus">
+                <a href="#"><span class="material-symbols-outlined" id="plus-icon">add</span></a>
+                <ul id="add-icon-menu" class="hide">
+                    <li>Join class</li>
+                    <li>Create class</li>
+                </ul>
+            </div>
+
             <a href="#"><span class="material-symbols-outlined">apps</span></a>
             <a href="#"><span class="material-symbols-outlined" id="account">account_circle</span></a>
         </ul>
     </nav>
     <main>
+        <div class="main-side">
+            <a href="#"><span class="material-symbols-outlined" id="hamburger">menu</span></a>
+
+            <div class="sidebar hide" id="sidebar">
+                <div class="main">
+                    <span class="material-symbols-outlined">home</span>
+                    <p>Classes</p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined new-hover">calendar_today</span>
+                    <p>Calendar</p>
+                </div>
+
+                <hr class="divide">
+
+                <label for="">Enrolled</label>
+                <div>
+                    <span class="material-symbols-outlined new-hover">fact_check</span>
+                    <p>To do</p>
+                </div>
+                <div class="classes">
+                    <span>B</span>
+                    <p>B10- Entrepreneurship</p>
+                </div>
+                <div class="classes">
+                    <span>B</span>
+                    <p>B10- Entrepreneurship</p>
+                </div>
+
+                <hr class="divide">
+
+                <div>
+                    <span class="material-symbols-outlined">archive</span>
+                    <p>Archived classes</p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">settings</span>
+                    <p>Settings</p>
+                </div>
+            </div>
+
+        </div>
+
         <div class="panel">
             <div class="todo"><span class="material-symbols-outlined new-hover">fact_check</span><a href="#"
                     class="panel-text">To-do</a></div>
@@ -146,8 +196,16 @@
     </main>
 
     <footer class="footer">
-        <span class="material-symbols-outlined">help</span>
+        <ul class="help-dropdown hide" id="help">
+            <li>What's new</li>
+            <li>Report issue or request feature</li>
+            <li>Help Centre</li>
+            <li>Help Community</li>
+        </ul>
+        <span class="material-symbols-outlined" id="help-button">help</span>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
